@@ -7,7 +7,7 @@ import com.java.blog.payload.PostDto;
 public interface PostService {
   PostDto createPost(PostDto postDto);
 
-  List<PostDto> getAllPosts();
+  List<PostDto> getAllPosts(int pageNo, int pageSize);
 
   PostDto getPostById(Long id);
 
